@@ -250,9 +250,24 @@ stop2:		  {
                           }
                   }
 
-		  //Использование оператора continue(прерывание текущей операции)
-
-
+		  //Использование оператора continue(прерывание текущей итерации)
+		  System.out.println("\n");
+		  for(int i9 = 0; i9<=100; i9++) {
+			  if((i9%2) !=0) continue; //Переход к следующей итерации
+			  System.out.println(i9);
+		  }
+		  System.out.println();
+	          //continue  с меткой
+		  System.out.println("\n");
+                  outerloop:
+		  for(int i9 = 1; i9<10; i9++) {
+		          System.out.print("\nПроход внешнего цикла №" + i9 + ", внутренний цикл: ");
+			  for(int j9 = 1; j9<10; j9++) {
+				  if(j9 == 5) continue outerloop; //Продолжить внешний цикл
+				  System.out.println(j9);
+			  }
+	          }
+		  System.out.println();
 	}
 }
 
