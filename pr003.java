@@ -196,4 +196,5 @@ class pr003 {
 		}
 		System.out.println("Циклы закончились");
 	}
-}	
+}
+
