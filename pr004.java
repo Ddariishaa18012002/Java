@@ -3,6 +3,12 @@ class Avtomobil {
 	int v; //объём топливного бака в л.
 	double rash; //расход топлива в л. на 100 км.
 	
+	Avtomobil(int p, int V, double r) {
+		pass = p;
+		v = V;
+		rash = r;
+	}
+
 	void rasst() {
 		System.out.println("Расстояние  на полном баке: " + ((int)(v/rash *100)));
         }
@@ -17,8 +23,8 @@ class Avtomobil {
 class pr004 {
 	public static void main(String args[]) {
 		//Создание экземпляра класса
-	        Avtomobil lada = new Avtomobil();
-		Avtomobil porshe = new Avtomobil();
+	        Avtomobil lada = new Avtomobil(4, 40, 5.5);
+		Avtomobil porshe = new Avtomobil(1, 100, 14.0);
 	        int rasst, rasst2;
 
 	        //Присваивание значения внутренним переменным экземпляра класса
