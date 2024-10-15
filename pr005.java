@@ -95,7 +95,7 @@ class Arrays {
 		riders[6] = new int[2];
 
 		for(int i3=0; i3<7; i3++)
-			for(int j3=0; j3<10; j3++)
+			for(int j3=0; j3<riders[i3].length; j3++)
 				riders[i3][j3] = i3 + j3 + 10;
 		
 		System.out.println("Количество пассажиров в рабочие дни недели: ");
