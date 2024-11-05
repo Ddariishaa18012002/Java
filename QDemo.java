@@ -124,11 +124,6 @@ class QDemo {
                 System.out.println("\n");
 
 
-
-
-
-
-	
 	}
 }
 
