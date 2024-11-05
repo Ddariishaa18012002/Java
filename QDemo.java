@@ -103,21 +103,21 @@ class QDemo {
 
 		Queue q3 = new Queue(q1);
 		System.out.print("содержимое q1: ");
-		for(i2=0; i2 < 10; i2++)
+		for(i2=0; i2 < 10; i2++) {
                         ch = q1.get();
 			System.out.print(ch);
 		}
 		System.out.println("\n");
 
 		System.out.print("содержимое q2(на базе массива): ");
-                for(i2=0; i2 < 4; i2++)
+                for(i2=0; i2 < 4; i2++) {
                         ch = q2.get();
                         System.out.print(ch);
                 }
                 System.out.println("\n");
 
 		System.out.print("содержимое q3(на базе очереди q1): ");
-                for(i2=0; i2 < 10; i2++)
+                for(i2=0; i2 < 10; i2++) {
                         ch = q3.get();
                         System.out.print(ch);
                 }
